@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cloud Template - Free Bootstrap 4 Template by Colorlib</title>
+    <title class="title">Service</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -21,17 +21,16 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">HexaClouds-About</a>
+	      <a class="navbar-brand" href="index.html">Cloud Template</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
-	      
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item active"><a href="services.html" class="nav-link">Services</a></li>
 	         <!-- <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>-->
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
@@ -47,8 +46,8 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
           <div class="col-md-8 ftco-animate text-center text-md-left mb-5">
-          	<p class="breadcrumbs mb-0"><span class="mr-3"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About Us</span></p>
-            <h1 class="mb-3 bread">About Us</h1>
+          	<p class="breadcrumbs mb-0"><span class="mr-3"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Service</span></p>
+            <h1 class="mb-3 bread" id="heading">Service</h1>
           </div>
         </div>
       </div>
@@ -56,36 +55,27 @@
 		
 		
     
-    <section class="ftco-section ftco-faqs">
-		<div class="container">
-			<div class="row align-items-center">
-				<!-- Image column -->
-				<div class="col-lg-6">
-					<div class="img img-faqs mb-4 mb-sm-0" id="service-image" style="background-image: url(images/about-2.jpg);">
-					</div>
-				</div>
-				<!-- Content column -->
-				<div class="col-lg-6 pl-lg-5">
-					<div class="heading-section mb-5 mt-5 mt-lg-0">
-						<h2 class="mb-3" id="service-title">About HexaClouds</h2>
-						<p id="service-description" style="color: #000;">
-							At HexaClouds, we are a dedicated team of cloud architects, DevOps engineers, FinOps specialists, and cloud security experts focused on empowering businesses to optimize and secure their IT operations. With deep expertise in cloud infrastructure, automation, financial cloud management (FinOps), and robust security practices, we enable organizations to innovate faster, scale seamlessly, and operate cost-efficient, secure cloud environments.
-						</p>
-						<p style="color: #000;">
-							Our mission is to bridge the gap between development, operations, and financial governance, ensuring your cloud journey is smooth, secure, and cost-optimized. We provide end-to-end consulting services, from designing scalable cloud architectures to implementing automation, integrating CI/CD pipelines, and managing cloud costs through FinOps strategies. Our cloud security specialists ensure that your infrastructure remains compliant and resilient against modern cyber threats.
-						</p>
-						<p style="color: #000;">
-							At HexaClouds, we believe that technology should be an enabler of growth and security, and our team is committed to unlocking the full potential of cloud platforms such as Azure, AWS, and Google Cloud for businesses of all sizes. With our FinOps expertise, we ensure that you maintain financial visibility and control, enabling you to balance innovation with cost efficiency.
-						</p>
-						<p style="color: #000;">
-							Our client-first approach ensures we deliver value at every stage of your cloud, DevOps, and security transformation, while empowering your team with the tools, insights, and strategies they need to thrive in a digital-first world.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</section>
+    <section class="ftco-section ftco-faqs"" data-stellar-background-ratio="0.5">
+      <section class="ftco-section ftco-faqs">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image column -->
+                <div class="col-lg-6">
+                    <div class="img img-faqs mb-4 mb-sm-0" id="service-image">
+                    </div>
+                </div>
+                <!-- Content column -->
+                <div class="col-lg-6 pl-lg-5">
+                    <div class="heading-section mb-5 mt-5 mt-lg-0">
+                        <h2 class="mb-3" id="service-title">Service Title</h2>
+                        <p id="service-description" style="color: #000;"></p>
+                        <ul id="service-details"style="color:#000;"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -152,7 +142,46 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the service ID from the URL (e.g., ?id=1)
+      const params = new URLSearchParams(window.location.search);
+      const serviceId = params.get('id');
+  
+      // Fetch the JSON data
+      fetch('services.json')
+          .then(response => response.json())
+          .then(data => {
+              // Find the service by ID
+              const service = data.services.find(s => s.id === serviceId);
+  
+              if (service) {
+                  // Populate the HTML with the service data
+                  document.getElementById('service-title').textContent = service.title;
+                  document.title="Hexa Clouds-"+service.title;
+                  document.getElementById('service-description').textContent = service.description;
+  
+                  // Change background image dynamically
+                  const imageElement = document.getElementById('service-image');
+                  imageElement.style.backgroundImage = `url(${service.image})`;
+  
+                  // Populate the details list
+                  const detailsList = document.getElementById('service-details');
+                  detailsList.innerHTML = ''; // Clear any existing items
+  
+                  service.details.forEach(detail => {
+                      const li = document.createElement('li');
+                      li.textContent = detail;
+                      detailsList.appendChild(li);
+                  });
+              } else {
+                  document.getElementById('service-detail').innerHTML = '<p>Service not found.</p>';
+              }
+          })
+          .catch(error => console.error('Error fetching the JSON file:', error));
+  });
+  
+  </script>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
