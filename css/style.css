@@ -8547,8 +8547,15 @@ h1, h2, h3, h4, h5,
         color: #fff; }
   .btn.btn-secondary {
     background: #21bf73;
-    border: 1px solid #21bf73;
-    color: #fff; }
+    border: 1px solid #3f52e3;
+    color: #fff; 
+  transition: .5s;}
+    .btn.btn-secondary:hover{
+      background: #fff!important;
+      border: 1px solid #fff!important;
+      color: #3f52e3!important;
+      transition:.5s;
+    }
     .btn.btn-secondary:hover {
       border: 1px solid #1da966;
       background: #1da966;
