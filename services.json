@@ -11,7 +11,7 @@
           "Multi-cloud Strategy: Design and implement multi-cloud architectures for redundancy and flexibility.",
           "Serverless and Containerization Solutions: Enhance scalability with serverless and containerized apps."
         ],
-        "image": "images/service1.jpg"
+        "image": "images/service-2.png"
       },
       {
         "id": "2",
@@ -24,7 +24,7 @@
           "DevOps Transformation Consulting: Help organizations adopt DevOps culture and tools.",
           "Automation and Orchestration: Automate operational tasks to reduce manual intervention."
         ],
-        "image": "path/to/devops_solutions_image.svg"
+        "image": "images/service-3.png"
       },
       {
         "id": "3",
@@ -37,7 +37,7 @@
           "Resource Right-Sizing: Adjust cloud resources to ensure you only pay for what you use.",
           "Tagging and Chargeback Models: Enable tracking through proper tagging for billing models."
         ],
-        "image": "path/to/finops_image.svg"
+        "image": "images/service-1.webp"
       },
       {
         "id": "4",
@@ -49,7 +49,7 @@
           "API Management: Secure and scalable APIs for efficient communication.",
           "Custom Platform Engineering: Tailored platform-driven workflows for minimal friction."
         ],
-        "image": "path/to/platform_engineering_image.svg"
+        "image": "images/service-4.png"
       },
       {
         "id": "5",
@@ -62,7 +62,7 @@
           "Cloud Security Monitoring & Response: Real-time threat detection and incident response.",
           "Zero Trust Architecture: Secure access to resources inside and outside the organization."
         ],
-        "image": "path/to/cloud_security_image.svg"
+        "image": "images/service-5.webp"
       },
       {
         "id": "6",
@@ -75,7 +75,7 @@
           "Centralized Logging and Analytics: Aggregate data for streamlined analysis and troubleshooting.",
           "Proactive Performance Monitoring: Identify and resolve bottlenecks before user impact."
         ],
-        "image": "path/to/sre_image.svg"
+        "image": "images/service-6.png"
       }
     ]
   }
