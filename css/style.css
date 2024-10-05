@@ -8793,7 +8793,8 @@ h1, h2, h3, h4, h5,
       transition: all 0.3s ease; }
     @media (max-width: 767.98px) {
       .ftco-partner .partner {
-        padding: 0 60px; } }
+        padding: 0 60px;
+      margin-left: 40px; } }
     .ftco-partner .partner:hover img {
       opacity: 1; }
     .partner img {
