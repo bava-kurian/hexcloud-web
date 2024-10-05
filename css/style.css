@@ -8796,7 +8796,16 @@ h1, h2, h3, h4, h5,
         padding: 0 60px; } }
     .ftco-partner .partner:hover img {
       opacity: 1; }
-
+    .partner img {
+        width: auto;
+        height: 150px; /* Adjust as needed */
+        object-fit: contain;
+        margin: auto;
+        display: block;
+    }
+    .partner{
+      width: 300px;
+    }
 .aside-stretch {
   background: #6c7ae9; }
   .aside-stretch:after {
