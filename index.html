@@ -529,23 +529,25 @@
     				</div>
     				<div class="row block-9">
 			          <div class="col-md-12">
-			            <form action="#">
-			              <div class="form-group">
-			                <input type="text" class="form-control" placeholder="Your Name">
-			              </div>
-			              <div class="form-group">
-			                <input type="text" class="form-control" placeholder="Your Email">
-			              </div>
-			              <div class="form-group">
-			                <input type="text" class="form-control" placeholder="Subject">
-			              </div>
-			              <div class="form-group">
-			                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-			              </div>
-			              <div class="form-group">
-			                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-			              </div>
-			            </form>
+			            <form action="https://api.staticforms.xyz/submit" method="post" class="bg-light p-5 contact-form">
+							<input type="hidden" name="accessKey" value="0202fd57-0dc5-4d8c-889c-e33b929fbbda">
+							<div class="form-group">
+							  <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+							</div>
+							<div class="form-group">
+							  <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+							</div>
+							<div class="form-group">
+							  <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+							</div>
+							<div class="form-group">
+							  <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+							</div>
+							<input type="hidden" name="redirectTo" value="https://bavakurian.me/hexcloud-web/success.html">
+							<div class="form-group">
+							  <input type="submit" value="Submit" class="btn btn-primary py-3 px-5">
+							</div>
+						  </form>
 			          </div>
 			        </div>
 	        </div>
