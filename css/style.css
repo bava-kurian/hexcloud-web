@@ -9271,6 +9271,15 @@ textarea.form-control {
 
 #section-counter {
   position: relative;
+    background-image: url(../images/service-bg.jpg); /* Update the path to your actual image location */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    padding: 100px 0; /* Adds spacing to the section */
+    position: relative;
+}
+
   z-index: 0; }
   #section-counter:after {
     position: absolute;
