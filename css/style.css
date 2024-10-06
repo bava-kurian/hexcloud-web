@@ -8786,34 +8786,58 @@ h1, h2, h3, h4, h5,
 
   
 
-.ftco-partner {
-  padding: 5em 0; }
+    .ftco-partner {
+      padding: 5em 0;
+  }
+  
   .ftco-partner .partner {
-    display: block;
-    padding: 0 20px; }
-    .ftco-partner .partner img {
-      opacity: .4;
-      -moz-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      -webkit-transition: all 0.3s ease;
-      -ms-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-    @media (max-width: 767.98px) {
+      display: block;
+      padding: 0 20px;
+      margin: 10px 0;
+  }
+  
+  .ftco-partner .partner img {
+      opacity: 1;
+      transition: all 0.3s ease;
+      width: auto;
+      height: 150px; /* Adjust as needed */
+      object-fit: contain;
+      margin: auto;
+      display: block;
+  }
+  
+  .partner {
+      width: auto; /* Auto width for flexibility */
+      margin: 0 20px; /* Adds some space between logos */
+  }
+  
+  /* Make logos in a single line for all viewports */
+  .partner-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; /* Ensure logos don't wrap */
+  }
+  
+  /* For mobile view, also display logos in a single row */
+  @media (max-width: 767.98px) {
       .ftco-partner .partner {
-        padding: 0 60px;
-      margin-left: 40px; } }
-    .ftco-partner .partner:hover img {
-      opacity: 1; }
-    .partner img {
-        width: auto;
-        height: 150px; /* Adjust as needed */
-        object-fit: contain;
-        margin: auto;
-        display: block;
-    }
-    .partner{
-      width: 300px;
-    }
+          padding: 0 10px;
+          margin-left: 0; /* Remove the margin to align properly */
+      }
+  
+      .partner-row {
+          flex-wrap: nowrap; /* Ensure they remain in a single line */
+          overflow-x: auto; /* Enable horizontal scroll for small screens */
+          justify-content: flex-start;
+      }
+  
+      /* Optional: reduce logo size on smaller screens */
+      .ftco-partner .partner img {
+          height: 100px; /* Adjust height for smaller viewports */
+      }
+  }
+  
 .aside-stretch {
   background: #6c7ae9; }
   .aside-stretch:after {
