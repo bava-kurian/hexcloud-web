@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/Flaticon/2.0.0/css/all.min.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/animate.css">
     
@@ -53,24 +55,26 @@
 	            <h1 class="mb-3"><span>HexaClouds</span></h1>
 	            <p>At HexaClouds, we are a dedicated team of cloud architects, DevOps engineers, FinOps specialists, 
 					and cloud security experts focused on empowering businesses to optimize and secure their IT operations. </p>
-	            <p><a href="about.html" class="btn btn-secondary px-4 py-3 roundeed-pill" >About Us</a></p>
+	            <p><a href="about.html" class="btn btn-primary px-4 py-3 roundeed-pill" >About Us</a></p>
 	          </div>
 	        </div>
 	    	</div>
       </div>
     </div>
 
-    <section class="ftco-section ftco-partner">
-    <div class="container">
-        <div class="d-flex justify-content-center align-items-center partner-row">
-            <a href="#" class="partner"><img src="images/partner-1.png" class="img-fluid partner-logo" alt="Partner 1"></a>
-            <a href="#" class="partner"><img src="images/partner-2.png" class="img-fluid partner-logo" alt="Partner 2"></a>
-            <a href="#" class="partner" style="width: 600px;"><img src="images/partner-3.png" class="img-fluid partner-logo" alt="Partner 3"></a>
-            <a href="#" class="partner" style="width: 600px;"><img src="images/partner-4.png" class="img-fluid partner-logo" alt="Partner 4"></a>
-            <a href="#" class="partner" style="width: 600px;"><img src="images/partner-5.png" class="img-fluid partner-logo" alt="Partner 5"></a>
-        </div>
-    </div>
-</section>
+    <section class="ftco-section ftco-partner scroller" data-speed="fast" data-direction="left">
+		<div class="container">
+			<div class="d-flex justify-content-center align-items-center partner-row scroller__inner">
+				<a href="#" class="partner" style="width: 400px;"><img src="images/partner-1.png" class="img-fluid partner-logo" alt="Partner 1"></a>
+				<a href="#" class="partner" style="width: 800px;"><img src="images/partner-2.png" class="img-fluid partner-logo" alt="Partner 2"></a>
+				<a href="#" class="partner" style="width: 800px;"><img src="images/partner-3.png" class="img-fluid partner-logo" alt="Partner 3"></a>
+				<a href="#" class="partner" style="width: 700px;"><img src="images/partner-4.png" class="img-fluid partner-logo" alt="Partner 4"></a>
+				<a href="#" class="partner" style="width: 950px;"><img src="images/partner-5.png" class="img-fluid partner-logo" alt="Partner 5"></a>
+				<a href="#" class="partner" style="width: 800px;"><img src="images/partner-6.png" class="img-fluid partner-logo" alt="Partner 6"></a>
+			</div>
+		</div>
+	</section>
+	
 
 	
 	
@@ -118,107 +122,101 @@
 		<div class="container">
 		  <div class="row justify-content-center mb-5">
 			<div class="col-md-8 text-center heading-section ftco-animate">
-			  <h2 class="mb-3">Services</h2>
-			  <!-- Added Subheading -->
+			  <h2 class="mb-3">Our Services</h2>
 			  <h4 class="mb-3">What Solutions We Provide</h4>
-			  <!-- Added Paragraph -->
 			  <p>At HexaClouds, we offer a comprehensive suite of services designed to accelerate your cloud transformation, optimize costs, enhance security, and streamline operations. Our team of experts is here to guide you through every phase of your cloud and DevOps journey, ensuring seamless integration, efficiency, and resilience.</p>
 			</div>
 		  </div>
 		  <div class="row">
+			<!-- Cloud Computing -->
 			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-			  <div class="media block-6 services d-flex">
+			  <a href="service_detail.html?id=1" class="media block-6 services d-flex">
 				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="flaticon-cloud"></span>
+				  <span class="flaticon-cloud-computing"></span> <!-- Example icon -->
 				</div>
 				<div class="media-body pl-4">
-				  <h3 class="heading">Cloud Engineerings</h3>
-				  <p class="mb-0">Tailored cloud infrastructure solutions that are scalable, secure, and optimized for performance across leading platforms like Azure, AWS, and Google Cloud.</p>
-				  <!-- Read More Button -->
-				  <a href="service_detail.html?id=1" class="btn btn-primary mt-2">Read More</a>
+				  <h3 class="heading">Cloud Computing Services</h3>
+				  <p>Tailored cloud solutions across major platforms such as AWS, Azure, and Google Cloud for optimized performance.</p>
 				</div>
-			  </div>
+			  </a>
 			</div>
-			
+	  
+			<!-- DevOps -->
 			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-			  <div class="media block-6 services d-flex">
+			  <a href="service_detail.html?id=2" class="media block-6 services d-flex">
 				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="flaticon-server"></span>
+				  <span class="flaticon-settings"></span> <!-- DevOps icon -->
 				</div>
 				<div class="media-body pl-4">
 				  <h3 class="heading">DevOps Solutions</h3>
-				  <p class="mb-0">Automation and efficiency through CI/CD pipelines, Infrastructure as Code, and monitoring systems.</p>
-				  <!-- Read More Button -->
-				  <a href="service_detail.html?id=2" class="btn btn-primary mt-2">Read More</a>
+				  <p>Achieve faster development cycles with our automated CI/CD pipelines and infrastructure as code.</p>
 				</div>
-			  </div>
+			  </a>
 			</div>
-			
+	  
+			<!-- SRE -->
 			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-			  <div class="media block-6 services d-flex">
+			  <a href="service_detail.html?id=3" class="media block-6 services d-flex">
 				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="flaticon-customer-service"></span>
+				  <span class="flaticon-customer-service"></span> <!-- SRE icon -->
 				</div>
 				<div class="media-body pl-4">
-				  <h3 class="heading">FinOps</h3>
-				  <p>Maximize cloud cost efficiency with detailed monitoring, billing transparency, and resource right-sizing.</p>
-				  <!-- Read More Button -->
-				  <a href="service_detail.html?id=3" class="btn btn-primary mt-2">Read More</a>
+				  <h3 class="heading">Site Reliability Engineering (SRE)</h3>
+				  <p>Improve operational reliability and scalability with our SRE services designed to reduce downtime and maintain performance.</p>
 				</div>
-			  </div>
+			  </a>
 			</div>
-			
+	  
+			<!-- Platform Engineering -->
 			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-			  <div class="media block-6 services d-flex">
+			  <a href="service_detail.html?id=4" class="media block-6 services d-flex">
 				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="flaticon-life-insurance"></span>
+				  <span class="flaticon-cloud"></span> <!-- Platform Engineering icon -->
 				</div>
 				<div class="media-body pl-4">
 				  <h3 class="heading">Platform Engineering</h3>
-				  <p>Build cloud-native platforms for development with Kubernetes, APIs, and custom engineering.</p>
-				  <!-- Read More Button -->
-				  <a href="service_detail.html?id=4" class="btn btn-primary mt-2">Read More</a>
+				  <p>Develop custom cloud-native platforms using Kubernetes, microservices, and API integration to enhance productivity.</p>
 				</div>
-			  </div>
+			  </a>
 			</div>
-			
+	  
+			<!-- Cloud Security -->
 			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-			  <div class="media block-6 services d-flex">
+			  <a href="service_detail.html?id=5" class="media block-6 services d-flex">
 				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="flaticon-cloud-computing"></span>
+					<span class="fas fa-shield-alt"></span> 
 				</div>
 				<div class="media-body pl-4">
 				  <h3 class="heading">Cloud Security</h3>
-				  <p>Comprehensive security strategies that safeguard cloud environments and ensure compliance.</p>
-				  <!-- Read More Button -->
-				  <a href="service_detail.html?id=5" class="btn btn-primary mt-2">Read More</a>
+				  <p>Comprehensive cloud security strategies to safeguard your data and ensure compliance across cloud platforms.</p>
 				</div>
-			  </div>
+			  </a>
 			</div>
-			
+	  
+			<!-- FinOps -->
 			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-			  <div class="media block-6 services d-flex">
+			  <a href="service_detail.html?id=6" class="media block-6 services d-flex">
 				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="flaticon-settings"></span>
+					<span class="fas fa-dollar-sign"></span>
 				</div>
 				<div class="media-body pl-4">
-				  <h3 class="heading">Cloud Monitoring & Observability</h3>
-				  <p>Ensure the reliability of cloud infrastructure with real-time monitoring, observability, and automated response.</p>
-				  <!-- Read More Button -->
-				  <a href="service_detail.html?id=6" class="btn btn-primary mt-2">Read More</a>
+				  <h3 class="heading">FinOps</h3>
+				  <p>Optimize your cloud costs with detailed insights into cloud billing and usage, maximizing your ROI.</p>
 				</div>
-			  </div>
+			  </a>
 			</div>
 		  </div>
 		</div>
 	  </section>
+	  
+	  
 
 	  <section class="ftco-section" style="margin-top: -100px;">
 		<div class="container">
 			<div class="row justify-content-center mb-5">
 				<div class="col-md-8 text-center heading-section ftco-animate">
-					<h2 class="mb-3">OUR ETHOS</h2>
-					<h4 class="mb-3">We believe in Ethics to achieve success</h4>
+					<h2 class="mb-3">OUR EXPERTISE</h2>
+					<h4 class="mb-3">What You Gain with Cloud and DevOps Services from DashDevs</h4>
 				</div>
 			</div>
 			<div class="row">
@@ -230,33 +228,44 @@
 						<div class="col-md-12 ftco-animate d-flex">
 							<div class="media block-6 services border d-flex p-3 mb-3">
 								<div class="icon icon-2 d-flex align-items-center justify-content-center">
-									<i class="fas fa-lightbulb"></i> <!-- Innovation Icon -->
+									<i class="fas fa-cloud"></i> <!-- Scalable cloud infrastructure Icon -->
 								</div>
 								<div class="media-body pl-4">
-									<h3 class="heading">Innovation</h3>
-									<p class="mb-0">We continuously explore new technologies and creative solutions to drive transformation in our services and products, ensuring we stay at the forefront of innovation in the cloud and DevOps industry.</p>
+									<h3 class="heading">Scalable Cloud Infrastructure</h3>
+									<p class="mb-0" style="font-size: 0.9rem;">Our DevOps cloud services will help you set up an infrastructure to accommodate growing demand and handle increased traffic and load without interruption.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-12 ftco-animate d-flex">
 							<div class="media block-6 services border d-flex p-3 mb-3">
 								<div class="icon icon-2 d-flex align-items-center justify-content-center">
-									<i class="fas fa-flask"></i> <!-- Research Icon -->
+									<i class="fas fa-cogs"></i> <!-- Automated deployment pipeline Icon -->
 								</div>
 								<div class="media-body pl-4">
-									<h3 class="heading">Research</h3>
-									<p class="mb-0">Our dedicated team is always engaged in rigorous research to develop and refine cloud infrastructure solutions, ensuring scalability, security, and performance across leading platforms.</p>
+									<h3 class="heading">Automated Deployment Pipeline</h3>
+									<p class="mb-0" style="font-size: 0.9rem;">As a DevOps services provider, we will help you automatically build, test, and deploy code changes to production environments, streamlining the development process and reducing the risk of human error.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-12 ftco-animate d-flex">
 							<div class="media block-6 services border d-flex p-3 mb-3">
 								<div class="icon icon-2 d-flex align-items-center justify-content-center">
-									<i class="fas fa-handshake"></i> <!-- Client Satisfaction Icon -->
+									<i class="fas fa-cloud-download-alt"></i> <!-- Optimized cloud environment Icon -->
 								</div>
 								<div class="media-body pl-4">
-									<h3 class="heading">Client Satisfaction</h3>
-									<p class="mb-0">Our top priority is to deliver exceptional value and seamless experiences to our clients, ensuring satisfaction through every phase of our projects, from consultation to deployment.</p>
+									<h3 class="heading">Optimized Cloud Environment</h3>
+									<p class="mb-0" style="font-size: 0.9rem;">We provide Azure, Google Cloud, and AWS DevOps services. No matter what cloud platform you choose, we ensure efficient resource allocation, cost-effectiveness, and high performance of your product.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 ftco-animate d-flex">
+							<div class="media block-6 services border d-flex p-3 mb-3">
+								<div class="icon icon-2 d-flex align-items-center justify-content-center">
+									<i class="fas fa-chart-line"></i> <!-- Comprehensive monitoring system Icon -->
+								</div>
+								<div class="media-body pl-4">
+									<h3 class="heading">Comprehensive Monitoring System</h3>
+									<p class="mb-0" style="font-size: 0.9rem;">By opting for DevOps managed service from DashDevs, you will be able to continuously track the health and performance of your cloud infrastructure and proactively address any potential issues.</p>
 								</div>
 							</div>
 						</div>
@@ -266,7 +275,9 @@
 		</div>
 	</section>
 	
-	<section class="ftco-section ftco-counter img" id="section-counter" data-stellar-background-ratio="0.5">
+
+	
+	<section class="ftco-section ftco-counter img" id="section-counter" data-stellar-background-ratio="0.5" style="margin-top: -100px;">
 		<div class="container pb-md-5">
 			<!-- Heading -->
 			<div class="row justify-content-center mb-5">
@@ -281,7 +292,7 @@
 					<div class="row justify-content-around">
 						<!-- Logos -->
 						<div class="col-6 col-sm-3 col-md-2 d-flex justify-content-center align-items-center ftco-animate">
-							<img src="images/client-1.png" alt="Client 1" class="img-fluid" style="max-width: 150px;">
+							<img src="images/client-1.png" alt="Client 1" class="img-fluid" style="max-width: 190px;">
 						</div>
 						<div class="col-6 col-sm-3 col-md-2 d-flex justify-content-center align-items-center ftco-animate">
 							<img src="images/client-2.png" alt="Client 2" class="img-fluid" style="max-width: 150px;">
@@ -290,7 +301,7 @@
 							<img src="images/client-3.png" alt="Client 3" class="img-fluid" style="max-width: 150px;">
 						</div>
 						<div class="col-6 col-sm-3 col-md-2 d-flex justify-content-center align-items-center ftco-animate">
-							<img src="images/client-4.png" alt="Client 4" class="img-fluid" style="max-width: 150px;">
+							<img src="images/client-4.png" alt="Client 4" class="img-fluid" style="max-width: 120px;">
 						</div>
 					</div>
 				</div>
@@ -664,7 +675,27 @@
   <!-- loader -->
   <div class="loader"></div>
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#6a11cb"/></svg></div>
+	<script>
+		const scrollers = document.querySelectorAll(".scroller");
 
+scrollers.forEach(scroller => {
+    // Check if reduced-motion preference is enabled
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        scroller.setAttribute("data-animated", true);
+
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const items = Array.from(scrollerInner.children);
+
+        // Clone items for continuous scroll effect
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            scrollerInner.appendChild(clone);
+        });
+    }
+});
+
+
+	</script>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>

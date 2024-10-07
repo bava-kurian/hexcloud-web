@@ -172,10 +172,11 @@
                   detailsList.innerHTML = ''; // Clear any existing items
   
                   service.details.forEach(detail => {
-                      const li = document.createElement('li');
-                      li.textContent = detail;
-                      detailsList.appendChild(li);
-                  });
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${detail.split(':')[0]}:</strong> ${detail.split(':').slice(1).join(':')}`; // Bold the topic
+                    detailsList.appendChild(li);
+                });
+                
               } else {
                   document.getElementById('service-detail').innerHTML = '<p>Service not found.</p>';
               }

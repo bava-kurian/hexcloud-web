@@ -478,8 +478,8 @@ pre {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: -75px;
+  margin-left: -75px; }
 
 .no-gutters {
   margin-right: 0;
@@ -8149,7 +8149,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #3f52e3; }
+  color: #000; }
   a:hover, a:focus {
     text-decoration: none;
     color: #3f52e3;
@@ -8806,37 +8806,46 @@ h1, h2, h3, h4, h5,
       display: block;
   }
   
-  .partner {
-      width: auto; /* Auto width for flexibility */
-      margin: 0 20px; /* Adds some space between logos */
+/* Scroller Styles */
+.scroller {
+  max-width: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.scroller__inner {
+  display: flex;
+  gap: 2rem; /* Space between logos */
+}
+
+.partner-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.partner img {
+  width: auto;
+  max-height: 100px; /* Control the height of logos */
+}
+
+/* Mobile Styling */
+@media (max-width: 767.98px) {
+  .scroller {
+    overflow-x: scroll; /* Enable horizontal scroll */
+    -webkit-overflow-scrolling: touch; /* Smooth touch scrolling */
   }
-  
-  /* Make logos in a single line for all viewports */
-  .partner-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap; /* Ensure logos don't wrap */
+
+  .scroller__inner {
+    flex-wrap: nowrap; /* Prevent wrapping on small screens */
   }
-  
-  /* For mobile view, also display logos in a single row */
-  @media (max-width: 767.98px) {
-      .ftco-partner .partner {
-          padding: 0 10px;
-          margin-left: 0; /* Remove the margin to align properly */
-      }
-  
-      .partner-row {
-          flex-wrap: nowrap; /* Ensure they remain in a single line */
-          overflow-x: auto; /* Enable horizontal scroll for small screens */
-          justify-content: flex-start;
-      }
-  
-      /* Optional: reduce logo size on smaller screens */
-      .ftco-partner .partner img {
-          height: 100px; /* Adjust height for smaller viewports */
-      }
+
+  /* Optional: Shrink logo sizes for mobile */
+  .partner img {
+    max-height: 80px; /* Slightly smaller logos on mobile */
   }
+}
+
   
 .aside-stretch {
   background: #6c7ae9; }
@@ -9158,8 +9167,7 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.9); }
 
 .heading-section.heading-section-white h2 {
-  font-size: 40px;
-  color: #fff; }
+  font-size: 40px; }
   @media (max-width: 767.98px) {
     .heading-section.heading-section-white h2 {
       font-size: 30px; } }
@@ -9312,11 +9320,6 @@ textarea.form-control {
 
 #section-counter {
   position: relative;
-    background-image: url(../images/service-bg.jpg); /* Update the path to your actual image location */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center center; /* Centers the background image */
-    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
     padding: 100px 0; /* Adds spacing to the section */
     position: relative;
 }
@@ -9333,8 +9336,7 @@ textarea.form-control {
     opacity: .9; }
 
 .ftco-counter {
-  padding: 5em 0;
-  background: #3f52e3; }
+  padding: 5em 0;}
   @media (max-width: 991.98px) {
     .ftco-counter {
       background-position: center center !important; } }
