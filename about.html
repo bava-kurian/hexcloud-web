@@ -1,174 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>HexaClouds-About Us</title>
+<head>
+    <title>hexaclouds - About Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">HexaClouds</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
 
-	      
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	         <!-- <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>-->
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
-	          <!--<li class="nav-item cta"><a href="#" class="nav-link"><span>Get started</span></a></li>-->
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
+    <style>
+        /* Custom CSS for About Us section */
+        .hero-wrap {
+            height: 70vh; /* Set a fixed height for the hero section */
+            background-size: cover; /* Ensure background image covers the section */
+            background-position: center; /* Center the background image */
+        }
 
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-end justify-content-start">
-          <div class="col-md-8 ftco-animate text-center text-md-left mb-5">
-          	<p class="breadcrumbs mb-0"><span class="mr-3"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About Us</span></p>
-            <h1 class="mb-3 bread">About Us</h1>
-          </div>
+        .about-section .col-lg-5 {
+            max-width: 90%; /* Reduce width for larger screens */
+            margin: 0 auto; /* Center the text container */
+        }
+
+        @media (max-width: 768px) {
+            .about-section .row {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .about-section .col-lg-5,
+            .about-section .col-lg-7 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 15px;
+            }
+
+            .about-section .col-lg-7 {
+                max-width: 80%; /* Reduce width for mobile */
+            }
+
+            .about-section .col-lg-5 img {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            .navbar .navbar-brand {
+                padding-left: 15px;
+            }
+
+            .navbar-toggler {
+                padding-right: 15px;
+            }
+
+            .heading-section {
+                margin-bottom: 20px;
+            }
+
+            #mission,
+            #vision {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #about-text {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">hexaclouds</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
         </div>
-      </div>
     </div>
-		
-		
-    
-    <section class="ftco-section ftco-faqs">
-		<div class="container">
-			<div class="row align-items-center">
-				<!-- Image column -->
-				<div class="col-lg-6">
-					<div class="img img-faqs mb-4 mb-sm-0" id="service-image" style="background-image: url(images/about-2.jpg);">
-					</div>
-				</div>
-				<!-- Content column -->
-				<div class="col-lg-6 pl-lg-5">
-					<div class="heading-section mb-5 mt-5 mt-lg-0">
-						<h2 class="mb-3" id="service-title">About HexaClouds</h2>
-						<p id="service-description" style="color: #000;">
-							At HexaClouds, we are a dedicated team of cloud architects, DevOps engineers, FinOps specialists, and cloud security experts focused on empowering businesses to optimize and secure their IT operations. With deep expertise in cloud infrastructure, automation, financial cloud management (FinOps), and robust security practices, we enable organizations to innovate faster, scale seamlessly, and operate cost-efficient, secure cloud environments.
-						</p>
-						<p style="color: #000;">
-							Our mission is to bridge the gap between development, operations, and financial governance, ensuring your cloud journey is smooth, secure, and cost-optimized. We provide end-to-end consulting services, from designing scalable cloud architectures to implementing automation, integrating CI/CD pipelines, and managing cloud costs through FinOps strategies. Our cloud security specialists ensure that your infrastructure remains compliant and resilient against modern cyber threats.
-						</p>
-						<p style="color: #000;">
-							At HexaClouds, we believe that technology should be an enabler of growth and security, and our team is committed to unlocking the full potential of cloud platforms such as Azure, AWS, and Google Cloud for businesses of all sizes. With our FinOps expertise, we ensure that you maintain financial visibility and control, enabling you to balance innovation with cost efficiency.
-						</p>
-						<p style="color: #000;">
-							Our client-first approach ensures we deliver value at every stage of your cloud, DevOps, and security transformation, while empowering your team with the tools, insights, and strategies they need to thrive in a digital-first world.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+</nav>
+<!-- END nav -->
+
+<div class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-start">
+            <div class="col-md-8 ftco-animate text-center text-md-left mb-5">
+                <p class="breadcrumbs mb-0"><span class="mr-3"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About Us</span></p>
+                <h1 class="mb-3 bread">About Us</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="ftco-section ftco-faqs about-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Column: Mission, Vision, and Logo -->
+            <div class="col-lg-5 pl-lg-5">
+                <div class="heading-section mb-5 mt-5 mt-lg-0">
+                    <div class="logo mb-4">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="hexaclouds Logo" style="max-width: 200px; margin-left:90px">
+                        </a>
+                    </div>
+                    <h2 class="mb-3">Our Mission</h2>
+                    <p style="color: #000;">
+                        Our mission is to bridge the gap between development, operations, and governance, ensuring the cloud journey is smooth, secure, and cost-optimized.
+                    </p>
+                    <h2 class="mb-3 mt-4">Our Vision</h2>
+                    <p style="color: #000;">
+                        We prioritize our clients by providing value throughout every phase of their cloud, DevOps, and security transformation, equipping their teams with the necessary tools, insights, and strategies to excel in today's digital age.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column: About Us Text -->
+            <div class="col-lg-7 pl-lg-5">
+                <div class="heading-section mb-5 mt-5 mt-lg-0">
+                    <h2 class="mb-3" id="service-title">About hexaclouds</h2>
+                    <p id="service-description" style="color: #000;">
+                        At hexaclouds, we are a dedicated team of cloud architects, DevOps engineers, FinOps specialists, and cloud security experts focused on empowering businesses to optimize and secure their IT operations. With deep expertise in cloud infrastructure, automation, financial cloud management (FinOps), and robust security practices, we enable organizations to innovate faster, scale seamlessly, and operate cost-efficient, secure cloud environments.
+                    </p>
+                    <p style="color: #000;">
+                        At hexaclouds, we believe that technology should be an enabler of growth and security, and our team is committed to unlocking the full potential of cloud platforms such as Azure, AWS, and Google Cloud for businesses of all sizes. With our FinOps expertise, we ensure that you maintain financial visibility and control, enabling you to balance innovation with cost efficiency.
+                    </p>
+                    <p style="color: #000;">
+                        Our client-first approach ensures we deliver value at every stage of your cloud, DevOps, and security transformation, while empowering your team with the tools, insights, and strategies they need to thrive in a digital-first world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section" style="margin-top: -100px;">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center heading-section ftco-animate">
+                <h2 class="mb-3">OUR EXPERTISE</h2>
+                <h4 class="mb-3">What You Gain with Cloud and DevOps Services from DashDevs</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 py-5 d-flex align-items-center">
+                <img src="images/undraw_referral_4ki4.png" class="img-fluid" alt="Ethos Illustration">
+            </div>
+            <div class="col-lg-6 py-5">
+                <div class="row">
+                    <div class="col-md-12 ftco-animate d-flex">
+                        <div class="media block-6 services border d-flex p-3 mb-3">
+                            <div class="icon icon-2 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-cloud"></i> <!-- Scalable cloud infrastructure Icon -->
+                            </div>
+                            <div class="media-body pl-4">
+                                <h3 class="heading">Scalable Cloud Infrastructure</h3>
+                                <p class="mb-0" style="font-size: 0.9rem;">Our DevOps cloud services will help you set up an infrastructure to accommodate growing demand and handle increased traffic and load without interruption.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ftco-animate d-flex">
+                        <div class="media block-6 services border d-flex p-3 mb-3">
+                            <div class="icon icon-2 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-cogs"></i> <!-- Automated deployment pipeline Icon -->
+                            </div>
+                            <div class="media-body pl-4">
+                                <h3 class="heading">Automated Deployment Pipeline</h3>
+                                <p class="mb-0" style="font-size: 0.9rem;">As a DevOps services provider, we will help you automatically build, test, and deploy code changes to production environments, streamlining the development process and reducing the risk of human error.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ftco-animate d-flex">
+                        <div class="media block-6 services border d-flex p-3 mb-3">
+                            <div class="icon icon-2 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-cloud-download-alt"></i> <!-- Optimized cloud environment Icon -->
+                            </div>
+                            <div class="media-body pl-4">
+                                <h3 class="heading">Optimized Cloud Environment</h3>
+                                <p class="mb-0" style="font-size: 0.9rem;">We provide Azure, Google Cloud, and AWS DevOps services. No matter what cloud platform you choose, we ensure efficient resource allocation, cost-effectiveness, and high performance of your product.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ftco-animate d-flex">
+                        <div class="media block-6 services border d-flex p-3 mb-3">
+                            <div class="icon icon-2 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-chart-line"></i> <!-- Comprehensive monitoring system Icon -->
+                            </div>
+                            <div class="media-body pl-4">
+                                <h3 class="heading">Comprehensive Monitoring System</h3>
+                                <p class="mb-0" style="font-size: 0.9rem;">By opting for DevOps managed service from DashDevs, you will be able to continuously track the health and performance of your cloud infrastructure and proactively address any potential issues.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <footer class="ftco-footer ftco-bg-dark ftco-section">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">HexaClouds</h2>
-          <p>At HexaClouds, we are a dedicated team of cloud architects, DevOps engineers, FinOps specialists, and cloud security experts focused on empowering businesses to optimize and secure their IT operations.</p>
-    <ul class="ftco-footer-social list-unstyled mb-0">
-    <li class="ftco-animate"><a href="#"><span class="fab fa-twitter"></span></a></li>
-    <li class="ftco-animate"><a href="#"><span class="fab fa-facebook"></span></a></li>
-    <li class="ftco-animate"><a href="#"><span class="fab fa-instagram"></span></a></li>
-    </ul>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">hexaclouds</h2>
+                    <p>At hexaclouds, we are a dedicated team of cloud architects, DevOps engineers, FinOps specialists, and cloud security experts focused on empowering businesses to optimize and secure their IT operations.</p>
+                    <ul class="ftco-footer-social list-unstyled mb-0">
+                        <li class="ftco-animate"><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="fab fa-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-5">
+                    <h2 class="ftco-heading-2">Services</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="service-detail.html?id=1" class="py-2 d-block">Cloud Engineering</a></li>
+                        <li><a href="service-detail.html?id=2" class="py-2 d-block">DevOps Solutions</a></li>
+                        <li><a href="service-detail.html?id=3" class="py-2 d-block">FinOps Solutions</a></li>
+                        <li><a href="service-detail.html?id=4" class="py-2 d-block">Cloud Security</a></li>
+                        <li><a href="service-detail.html?id=5" class="py-2 d-block">Cloud Monitoring & Observability</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Navigational</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="py-2 d-block">About Us</a></li>
+                        <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+                        <li><a href="services.html" class="py-2 d-block">Services</a></li>
+                        <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
+                        <li><a href="#" class="py-2 d-block">Terms &amp; Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Office</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon fas fa-map-marker-alt"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                            <li><a href="#"><span class="icon fas fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                            <li><a href="#"><span class="icon fas fa-envelope"></span><span class="text">info@hexaclouds.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4 ml-md-5">
-          <h2 class="ftco-heading-2">Services</h2>
-          <ul class="list-unstyled">
-            <li><a href="service-detail.html?id=1" class="py-2 d-block">Cloud Engineering</a></li>
-            <li><a href="service-detail.html?id=2" class="py-2 d-block">DevOps Solutions</a></li>
-            <li><a href="service-detail.html?id=3" class="py-2 d-block">FinOps</a></li>
-            <li><a href="service-detail.html?id=4" class="py-2 d-block">Platform Engineering</a></li>
-            <li><a href="service-detail.html?id=5" class="py-2 d-block">Cloud Security</a></li>
-            <li><a href="service-detail.html?id=6" class="py-2 d-block">Cloud Monitoring & Observability</a></li>
-          </ul>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | hexaclouds</p>
+            </div>
         </div>
-      </div>
-      <div class="col-md">
-         <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Navigational</h2>
-          <ul class="list-unstyled">
-            <li><a href="about.html" class="py-2 d-block">About Us</a></li>
-            <li><a href="contact.html" class="py-2 d-block">Contact US</a></li>
-            <li><a href="services.html" class="py-2 d-block">Services</a></li>
-            <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
-            <li><a href="#" class="py-2 d-block">Terms &amp; Condition</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Office</h2>
-          <div class="block-23 mb-3">
-            <ul>
-              <li><span class="mr-3 fa fa-map-marker"></span><span class="text">Pune, India(In)</span></li>
-              <li><a href="#"><span class="mr-3 fa fa-phone"></span><span class="text">+91 392 3929 210</span></a></li>
-              <li><a href="#"><span class="mr-3 fa fa-envelope"></span><span class="text">info@hexaclouds.com</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
+</footer>
 
-        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-      </div>
-    </div>
-  </div>
-</footer> 
-  
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
-  </body>
+</body>
 </html>

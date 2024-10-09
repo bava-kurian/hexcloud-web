@@ -27,7 +27,7 @@
       "image": "images/service-3.png"
     },
     {
-      "id": "3",
+      "id": "6",
       "title": "FinOps (Cloud Financial Management)",
       "description": "Maximize cloud cost efficiency with detailed monitoring, billing transparency, and resource right-sizing.",
       "details": [
@@ -65,7 +65,7 @@
       "image": "images/service-5.webp"
     },
     {
-      "id": "6",
+      "id": "3",
       "title": "Site Reliability Engineering",
       "description": "Ensure the reliability of cloud infrastructure with real-time monitoring, observability, and automated response.",
       "details": [
